@@ -1,0 +1,10 @@
+#Labels
+LBL_CONTEXT_NAME = "Context or Table Name: "
+LBL_DATA_FORMAT = "Data Format (SQL, CSV,  TXT, JSON): "
+LBL_NUMBER_OF_FIELDS = "Number of fields: "
+LBL_FIELD = "Field "
+LBL_FIELD_NAME = "Name: "
+LBL_FIELD_DATA_TYPE = "Data type (INT, STR, FLOAT, DATE): "
+LBL_MIN_VALUE = "Min Length: "
+LBL_MAX_VALUE = "Max Length: "
+LBL_NUMBER_OF_ROWS = "Number of Rows: "
