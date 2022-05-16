@@ -20,6 +20,9 @@
 - English 
 - Portuguese
 
+# Requirements:
+- Python 3.9
+
 ## For use this tool, type in Command Line:
 
 ``

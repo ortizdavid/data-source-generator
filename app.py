@@ -7,13 +7,14 @@ from src.txt_src import TxtSrc
 print("1 - English [EN]\n2 - Portuguese [PT]")
 language = input("Choose language: ")
 
-if language in ['PT', 'pt', '1']:
-    from lang.labels_pt import *
-    from lang.messages_pt import *
-if language in ['EN', 'en', '2']:
+if language in ['EN', 'en', '1']:
     from lang.labels_en import *
     from lang.messages_en import *
+if language in ['PT', 'pt', '2']:
+    from lang.labels_pt import *
+    from lang.messages_pt import *
 
+print()
 name = input(LBL_CONTEXT_NAME)
 data_format = input(LBL_DATA_FORMAT) 
 num_fields = int(input(LBL_NUMBER_OF_FIELDS))
@@ -21,6 +22,7 @@ num_fields = int(input(LBL_NUMBER_OF_FIELDS))
 # Context or Problem or Table
 context = Context(name, data_format, num_fields)
 
+print()
 #Creating fields and its values
 for i in range(num_fields):
     
@@ -34,6 +36,7 @@ for i in range(num_fields):
         print(f"'{data_type}'{MSG_ERR_NOT_ALLOWED_TYPE}")
         break
 
+print()
 print(MSG_SUCESS_FIELDS_ADDED)
 num_rows = int(input(LBL_NUMBER_OF_ROWS))
 dir_src = "data-source/"
@@ -56,6 +59,6 @@ elif data_format.upper() == 'TXT':
 elif data_format.upper() == 'JSON':
     json = JSONSrc(context)
     json.create_src(num_rows, dir_src)
-    print(f"'{data_format}'- {MSG_SUCESS_SOURCE_GREATED} {MSG_SUCESS_DIRECTORY} '{dir_src}'")
+    print(f"'{data_format}' {MSG_SUCESS_SOURCE_GREATED} {MSG_SUCESS_DIRECTORY} '{dir_src}'")
 else:
     print(f"'{data_format}' {MSG_ERR_NOT_ALLOWED_FORMAT}")
