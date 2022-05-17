@@ -1,6 +1,6 @@
 # Data Source Generator
 
-<img src="flow.jpg">
+<img src="img/flow.jpg">
 
 
 ## This tool can be used to generate data source
@@ -19,6 +19,9 @@
 - TXT
 - JSON
 - XML
+
+## Application activity diagram
+<img src="img/generate.jpg">
 
 ## This tool supports 2 languages: 
 - English 
