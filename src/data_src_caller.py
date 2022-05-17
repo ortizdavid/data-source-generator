@@ -33,8 +33,8 @@ class DataSrcCaller:
 
     @classmethod
     def call_xml_src(cls, context: Context, num_rows: int, dir_src: str):
-        json = XMLSrc(context)
-        json.create_src(num_rows, dir_src)  
+        xml = XMLSrc(context)
+        xml.create_src(num_rows, dir_src)  
 
 
     @classmethod
