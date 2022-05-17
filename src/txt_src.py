@@ -3,6 +3,7 @@ from src.file_src import FileSrc as fs
 
 class TxtSrc:
 
+
     def __init__(self, context: Context):
         self._context = context
 

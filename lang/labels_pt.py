@@ -1,10 +1,10 @@
 #Labels
 LBL_CONTEXT_NAME = "Nome do Contexto ou Tabela: "
-LBL_DATA_FORMAT = "Formato dos Dados (SQL, CSV,  TXT, JSON): "
+LBL_DATA_FORMAT = "Formato dos Dados [SQL, CSV, TXT, JSON, XML ou Todos (t)]: "
 LBL_NUMBER_OF_FIELDS = "Número de Campos: "
 LBL_FIELD = "Campo "
 LBL_FIELD_NAME = "Nome: "
-LBL_FIELD_DATA_TYPE = "Tipo de Dado do campo (INT, STR, FLOAT, DATE, TIME e DATETIME): "
+LBL_FIELD_DATA_TYPE = "Tipo de Dado do campo [INT, STR, FLOAT, DATE, TIME e DATETIME]: "
 LBL_MIN_VALUE = "Tamanho mínimo: "
 LBL_MAX_VALUE = "Tamanho Máximo: "
 LBL_NUMBER_OF_ROWS = "Número de linhas: "

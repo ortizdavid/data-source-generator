@@ -24,7 +24,7 @@ class ValueGenerator:
 		max_value = int(max_value)
 		pos = random.randint(1, max_value)
 		str_result = secrets.token_hex(pos)
-		#str_result[1:pos]
+		str_result = str_result[1:pos]
 		return f'{prefix.upper()}_{str_result}'
 
 

@@ -7,7 +7,7 @@ class Context:
     max_values = []
     min_values = []
 
-    _allowed_formats = {'SQL', 'CSV', 'TXT', 'JSON'}
+    _allowed_formats = {'SQL', 'CSV', 'TXT', 'JSON', 'XML'}
     _allowed_data_types = {'INT', 'STR', 'FLOAT', 'DATE', 'TIME', 'DATETIME'}
     
 
@@ -22,14 +22,6 @@ class Context:
         self.data_types.append(type)
         self.min_values.append(min)
         self.max_values.append(max)
-       
-
-    def is_allowed_format(self):
-        return self._data_format.upper() in self._allowed_formats
-
-
-    def is_alowed_type(self, type):
-        return type.upper() in self._allowed_formats
 
 
     def generate_field_value(self, type, min, max):

@@ -8,7 +8,7 @@ class FileSrc:
         if os.path.isfile(file_name):
             os.remove(file_name)
         else:
-            file = open(file_name, "a")
+            file = open(file_name.lower(), "a")
             file.write(content)
             file.close()
 
