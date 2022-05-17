@@ -2,8 +2,8 @@
 
 # This tool can be used to generate data source
 
-# Projects to use DsGen:
-- Popualte SQL Databases
+# Projects to use data-source-generator:
+- Populate SQL Databases
 - ETL
 - Data Warehouse and Data Marts
 - Data Mining
@@ -15,6 +15,7 @@
 - CSV
 - TXT
 - JSON
+- XML
 
 # This tool supports 2 languages: 
 - English 
