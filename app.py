@@ -37,34 +37,34 @@ for i in range(num_fields):
         break
 
 print()
-print(MSG_SUCESS_FIELDS_ADDED)
+print(MSG_SUCCESS_FIELDS_ADDED)
 num_rows = int(input(LBL_NUMBER_OF_ROWS))
 #dir_src = input("Directory for Data Source: ")
 dir_src = "data-source/"
 
 if data_format.upper() == 'SQL':
     DataSrcCaller.call_sql_src(context, num_rows, dir_src) 
-    print(f"'{data_format}'- {MSG_SUCESS_SOURCE_GREATED} {MSG_SUCESS_DIRECTORY} '{dir_src}'")
+    print(f"'{data_format}'- {MSG_SUCCESS_SOURCE_GREATED} {MSG_SUCCESS_DIRECTORY} '{dir_src}'")
 
 elif data_format.upper() == 'CSV':
     DataSrcCaller.call_csv_src(context, num_rows, dir_src)
-    print(f"'{data_format}'- {MSG_SUCESS_SOURCE_GREATED} {MSG_SUCESS_DIRECTORY} '{dir_src}'")
+    print(f"'{data_format}'- {MSG_SUCCESS_SOURCE_GREATED} {MSG_SUCCESS_DIRECTORY} '{dir_src}'")
 
 elif data_format.upper() == 'TXT':
     DataSrcCaller.call_txt_src(context, num_rows, dir_src)
-    print(f"'{data_format}'- {MSG_SUCESS_SOURCE_GREATED} {MSG_SUCESS_DIRECTORY} '{dir_src}'")
+    print(f"'{data_format}'- {MSG_SUCCESS_SOURCE_GREATED} {MSG_SUCCESS_DIRECTORY} '{dir_src}'")
 
 elif data_format.upper() == 'JSON':
     DataSrcCaller.call_json_src(context, num_rows, dir_src)
-    print(f"'{data_format}' {MSG_SUCESS_SOURCE_GREATED} {MSG_SUCESS_DIRECTORY} '{dir_src}'")
+    print(f"'{data_format}' {MSG_SUCCESS_SOURCE_GREATED} {MSG_SUCCESS_DIRECTORY} '{dir_src}'")
 
 elif data_format.upper() == 'XML':
     DataSrcCaller.call_xml_src(context, num_rows, dir_src)
-    print(f"'{data_format}' {MSG_SUCESS_SOURCE_GREATED} {MSG_SUCESS_DIRECTORY} '{dir_src}'")
+    print(f"'{data_format}' {MSG_SUCCESS_SOURCE_GREATED} {MSG_SUCCESS_DIRECTORY} '{dir_src}'")
 
 elif data_format.upper() in ['ALL', 'A', 'TODOS', 'T']:
     DataSrcCaller.call_all_src(context, num_rows, dir_src) 
-    print(f"'{data_format}' {MSG_SUCESS_SOURCE_GREATED} {MSG_SUCESS_DIRECTORY} '{dir_src}'")
+    print(f"'{data_format}' {MSG_SUCCESS_SOURCE_GREATED} {MSG_SUCCESS_DIRECTORY} '{dir_src}'")
 
 else:
     print(f"'{data_format}' {MSG_ERR_NOT_ALLOWED_FORMAT}")

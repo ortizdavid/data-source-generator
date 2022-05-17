@@ -1,8 +1,11 @@
 # Data Source Generator
 
-# This tool can be used to generate data source
+<img src="flow.jpg">
 
-# Projects to use data-source-generator:
+
+## This tool can be used to generate data source
+
+## Projects to use data-source-generator:
 - Populate SQL Databases
 - ETL
 - Data Warehouse and Data Marts
@@ -10,18 +13,18 @@
 
 ## To generate the data, you need the context, fields, data types and number of records
 
-# We can create our data source in following formats:
+## We can create our data source in following formats:
 - SQL
 - CSV
 - TXT
 - JSON
 - XML
 
-# This tool supports 2 languages: 
+## This tool supports 2 languages: 
 - English 
 - Portuguese
 
-# Requirements:
+## Requirements:
 - Python 3.9
 
 ## For use this tool, type in Command Line:
